@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 80vw;
+  margin: auto;
+  animation: fadeIn 1s ease-in;
+}
+
+@media screen and (max-width: 923px) {
+  .navigation-menu {
+    flex-direction: column;
+    text-align: center;
+    height: 15rem !important;
+  }
+  .para {
+    padding: 0px !important;
+  }
+  li {
+    padding: 0px !important;
+  }
+  ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .section1 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .left {
+    align-items: center;
+    width: auto !important;
+  }
+  .lines {
+    text-align: center;
+  }
+  .dumbell-img {
+    margin: 0 !important;
+  }
+  @media screen and (max-width: 923px) {
+    .boxes {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+    .box {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 399px) {
+    .lines {
+      font-size: 0.7em;
+    }
+    .para {
+      font-size: 0.8em !important;
+      padding: 0em !important;
+    }
+    .section2 {
+      padding-top: 3em !important;
+      padding-bottom: 2em !important;
+    }
+    .box {
+      height: 16rem !important;
+      width: 14rem !important;
+    }
+    .box h2 {
+      padding: 12px;
+    }
+    ul {
+      padding: 0px !important;
+    }
+    .section3 {
+      padding-top: 1rem !important;
+      padding-bottom: 3rem !important;
+    }
+    .left {
+      width: 70vw !important;
+    }
+  }
+  @media screen and (max-width: 345px) {
+    .dumbell-img {
+      width: 25vw !important;
+      height: 17vh !important;
+    }
+  }
+
+  @media screen and (max-width: 413px) {
+    .lines {
+      width: 64vw;
+    }
+    .dumbell-img {
+      display: none;
+    }
+    .left {
+      width: auto !important;
+      padding: 0 !important;
+    }
+    .gym-img {
+      margin: 2em 5em 0em 5em !important;
+    }
+    .section1 {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+    .para {
+      padding: 0px !important;
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+    }
+
+    .section2 {
+      padding-top: 2em !important;
+      padding-bottom: 1em !important;
+    }
+    .section3 {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: rgb(227 74 56);
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: rgb(227 74 56);
+  }
+}
